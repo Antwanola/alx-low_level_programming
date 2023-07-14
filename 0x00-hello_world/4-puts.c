@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/*
+ *
+ * This is about a new beginning
+ */
 
 int main(void)
 {
