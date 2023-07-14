@@ -9,11 +9,12 @@
 int main(void)
 {
 /* Your code here */
-printf("Size of a char:%c byte(s)\n", (sizeof(char)));
+printf("Size of a char:%zu byte(s)\n", (sizeof(char)));
 printf("Size of an int:%d byte(s)\n", (sizeof(int)));
 printf("Size of a long int:%li byte(s)\n", (sizeof(signed long int)));
 printf("Size of a long long int:%i byte(s)\n", (sizeof(long long int)));
 printf("Size of a float:%lu byte(s)\n", (sizeof(float)));
+printf("\n");
 return (0);
 }
 
