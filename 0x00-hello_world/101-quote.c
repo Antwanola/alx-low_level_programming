@@ -1,9 +1,16 @@
 #include <unistd.h>
 /**
+<<<<<<< Updated upstream
 *main - Entry point
 *Description: 'making commenter'
 *Return: Always 1 (Success)
 */
+=======
+ *main - Entry point
+ *Description: 'making commenter' 
+ *Return: Always 1 (Success)
+ */
+>>>>>>> Stashed changes
 int main(void)
 {
 int param = 1;

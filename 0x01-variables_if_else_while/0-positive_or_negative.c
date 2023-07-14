@@ -5,8 +5,7 @@
  * main - This is the entry point
  * Description: A program printing rand num
  * Return: 0 (Success)
- * /
-/* betty style doc for function main goes there */
+ */
 int main(void)
 {
 	int n;
