@@ -4,7 +4,7 @@
  * Description: using just putchar to print all the alphabets
  * Return: 0 (success)
  */
-int main() {
+int main(void) {
     char letter;
 
     for (letter = 'a'; letter <= 'z'; letter++) {
