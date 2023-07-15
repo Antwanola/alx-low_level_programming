@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * main - entry function
  * Description: using just putchar to print all the alphabets
