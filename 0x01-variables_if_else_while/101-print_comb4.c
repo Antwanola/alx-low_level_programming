@@ -2,7 +2,7 @@
 /**
  * main - entry function
  * Description: using just putchar to print all the alphabets
- * Return: 0 (success)	
+ * Return: 0 (success)
  */
 int main(void)
 {
@@ -12,15 +12,14 @@ int main(void)
 
 	for (num1 = 48; num1 < 56; num1++)
 	{
-	for (num2 = num2 + 1; num2 <57 ; num2++)
+		for (num2 = num1 + 1; num2 < 57 ; num2++)
 	{
-	for (num3 = num2 + 1; num3 < 58; num3++)
+		for (num3 = num2 + 1; num3 < 58; num3++)
 	{
-	putchar((num1 % 10) + '0');
-	putchar((num2 % 10) + '0');
-	putchar((num3 % 10) + '0');
-	if (num1 == 47 && num2 == 56 && num3 == 57)
-		continue;
+		putchar(num1);
+		putchar(num2);
+		putchar(num3);
+	if (num1 != 55 && num2 != 56 && num3 != 57)
 	putchar(',');
 	putchar(' ');
 	}
