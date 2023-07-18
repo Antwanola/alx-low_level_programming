@@ -1,4 +1,4 @@
-#include "main.h"
+#include "print_alphabet.c"
 
 /**
  * main - The usual main entry point of all c program
