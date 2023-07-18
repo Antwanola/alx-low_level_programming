@@ -10,7 +10,6 @@
 
 int main(void)
 {
-	print_alphabet('a','z');
-
+	print_alphabet();
 	return (0);
 }
