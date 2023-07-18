@@ -7,7 +7,7 @@
  * Return: 0 as usual
  */
 
-void print_alphabet()
+void print_alphabet(void)
 {
 	char alpha;
 
