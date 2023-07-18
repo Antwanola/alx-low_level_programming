@@ -1,15 +1,21 @@
 #include "main.h"
 
 /**
- * main - The usual main entry point of all c program
+ * print_alphabet - Not the usual main entry
  *
  * Description: Just printing _puctchar
  *
  * Return: 0 as usual
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+char alpha;
+
+for (alpha = 'a'; alpha <= 'z'; alpha++)
+{
+_putchar(alpha)
+}
+_putchar('\n');
+return (0);
 }
