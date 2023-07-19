@@ -3,8 +3,7 @@
  * print_last_digit - gets the last digit of anumber
  *
  * Description: printing the last digit
- * @n - takes in numbers
- * 
+ * @n: takes in numbers
  * Return: returns last num
  */
 
@@ -17,7 +16,6 @@ int print_last_digit(int n)
 		n = -n;
 	}
 	a = n % 10;
-
 	if (a < 0)
 	{
 		a = -a;
@@ -25,4 +23,3 @@ int print_last_digit(int n)
 	_putchar(a + '0');
 	return (a);
 }
-
