@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - main here
+ * jack_bauer - main here
  *
  * Description: description here
  *
