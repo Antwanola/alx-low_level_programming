@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- *
- * main -  the main entry
+ * _isalpha -  the main entry
  *
  * Description: The aphabet checker
- *
- * Return 0 or 1 as usual or
+ *@c: enter a value here
+ * Return: 0 or 1 as usual or
  */
 
 int _isalpha(int c)
