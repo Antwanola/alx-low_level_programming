@@ -3,8 +3,9 @@
  * print_last_digit - gets the last digit of anumber
  *
  * Description: printing the last digit
- *
- *
+ * @n - takes in numbers
+ * 
+ * Return: returns last num
  */
 
 int print_last_digit(int n)
