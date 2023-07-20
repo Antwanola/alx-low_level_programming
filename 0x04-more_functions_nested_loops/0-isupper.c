@@ -19,13 +19,11 @@ int _isupper(int c)
 		_putchar(' ');
 		return (1);
 	}
-	else if (c >= 'a' && c <= 'Z')
+	else
 	{
 		_putchar(c);
 		_putchar(':');
 		_putchar(' ');
 		return (0);
 	}
-
-	return (0);
 }
