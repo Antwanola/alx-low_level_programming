@@ -7,7 +7,7 @@
  *
  * @c: the input
  *
- * Return: 0
+ * Return: int
  */
 
 int _isupper(int c)
