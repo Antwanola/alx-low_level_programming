@@ -12,9 +12,11 @@ void _puts(char *str)
 {
 	size_t length = strlen(str);
 	size_t i;
+	size_t take;
 
 	for (i = 0; i < length; i++)
 	{
-		_puts(str[i]);
+		take = str[i];
+		_puts(take`);
 	}
 }
