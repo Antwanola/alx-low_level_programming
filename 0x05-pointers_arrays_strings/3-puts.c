@@ -14,9 +14,10 @@ void _puts(char *str)
 	size_t i;
 	size_t take;
 
-	for (i = 0; i < length; i++)
+	for (i = 0; i < str[i]; i++)
 	{
 		take = str[i];
 		_putchar(take);
 	}
+	_putchar('\n');
 }
