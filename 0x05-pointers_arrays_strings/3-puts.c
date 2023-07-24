@@ -11,8 +11,9 @@
 void _puts(char *str)
 {
 	size_t length = strlen(str);
+	size_t i;
 
-	for (size_t i = 0; i < length; i++)
+	for (i = 0; i < length; i++)
 	{
 		_puts(str[i]);
 	}
