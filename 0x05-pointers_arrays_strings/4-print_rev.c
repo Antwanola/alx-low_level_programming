@@ -1,12 +1,23 @@
 #include "main.h"
-
+#include <string.h>
+/**
+ * print_rev - entry point
+ * @s: this is where the string goes
+ *
+ * Return: void
+ */
 
 void print_rev(char *s)
 {
-	while (*s == '\0')
+	int i, len, temp;
+
+	len = strlen(s);
+
+	for (i = 0; i < len / 2; i++)
 	{
-		_putchar(*s--);
-		
+		temp  = s[i];
+		s[i] = s[len - i - 1];
+		s[len - i - 1] = temp;
 	}
 	_putchar('\n');
 }
