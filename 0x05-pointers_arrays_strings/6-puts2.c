@@ -1,7 +1,12 @@
 #include "main.h"
 
 #include <string.h>
-
+/**
+ * puts2 - entry point
+ * @str: this takes in strings
+ *
+ * Return: void
+ */
 
 void puts2(char *str)
 {
