@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * reset_to_98: resets all to 98
- * @n - takes in integer nums
+ * reset_to_98 - resets all to 98
+ * @n: takes in integer nums
  *
  * Return: void
  */
