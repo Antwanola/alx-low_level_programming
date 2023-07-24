@@ -13,5 +13,5 @@ void _puts(char *str)
 	size_t length = strlen(str);
 
 	for (int i = 0; i <= length; i++)
-		_putchar(i);
+		_puts(i);
 }
