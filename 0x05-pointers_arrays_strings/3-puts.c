@@ -17,6 +17,6 @@ void _puts(char *str)
 	for (i = 0; i < length; i++)
 	{
 		take = str[i];
-		_puts(take`);
+		_puts(take);
 	}
 }
