@@ -1,9 +1,11 @@
 #include "main.h"
 /**
- * _strcmp-compare two strings
+ * _strcmp - compare two strings
  * Description: This function takes two strings and compare if equal
  * @s1: first string
  * @s2: second string
+ *
+ *
  * Return: Int 0, -ve or +ve number as the case may be
  */
 
