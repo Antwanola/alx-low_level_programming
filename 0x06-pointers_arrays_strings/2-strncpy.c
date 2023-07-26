@@ -1,4 +1,12 @@
 #include "main.h"
+/**
+ * _strncpy - copies the source string to destination
+ * Description: Copies strings in nth number
+ * @dest: destination pointer
+ * @src: source pointer
+ * @n: number of strings to copy (Photocopy ko Easy)
+ * Return: char
+ */
 
 char *_strncpy(char *dest, char *src, int n)
 {
