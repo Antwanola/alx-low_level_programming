@@ -7,21 +7,23 @@
  * Return: char
  */
 
-char *cap_string(char *q)
+char *cap_string(char *s)
 {
-int i;
+	int a;
 
-while (q[i] != '\0')
-{
-if (q[i] >= 'A' && q[i] <= 'Z')
-	q[i];
-if (q[i - 1] == ' ' || q[i - 1] == '\n' || q[i - 1] == '\t' || q[i - 1] == '.')
-{
-while (q[i] >= 'a' && q[i] <= 'z')
-q[i] = q[i] - 32;
-}
-i++;
-}
+	if (s[0] >= 'a' && s[0] <= 'z')
+		s[0] = s[0] - ' ';
 
-return (q);
+	for (a = 1; s[a] != '\0'; a++)
+	{
+		if ((s[a - 1] == ' ' || s[a - 1] == '\n' || s[a - 1] == '\t'
+		     || s[a - 1] == ',' || s[a - 1] == ';' || s[a - 1] == '!'
+		     || s[a - 1] == '?' || s[a - 1] == '"' || s[a - 1] == '('
+		     || s[a - 1] == ')' || s[a - 1] == '{' || s[a - 1] == '}'
+		     || s[a - 1] == '.') && (s[a] > 'a' && s[a] < 'z'))
+		{
+			s[a] = s[a] - ' ';
+		}
+	}
+	return (s);
 }
