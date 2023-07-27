@@ -2,7 +2,7 @@
 /**
  * cap_string - prints 1st letters as upper
  * Description: Takes a pointer str and conversts first letter to upper
- * @q: takes string pointers
+ * @s: takes string pointers
  *
  * Return: char
  */
