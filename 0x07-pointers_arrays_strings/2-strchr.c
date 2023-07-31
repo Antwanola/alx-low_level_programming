@@ -5,7 +5,6 @@
  * @c: char to look for
  * Return: char or NULL
  */
-
 char *_strchr(char *s, char c)
 {
 	while (*s != '\0')
