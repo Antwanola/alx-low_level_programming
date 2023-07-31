@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * *_strchr- returns the pointer to s
+ * @s: string 
+ * @c: char to look for
+ * Return: char or NULL
+ */
 
 char *_strchr(char *s, char c)
 {
