@@ -1,8 +1,12 @@
 #include "main.h"
+/**
+ * factorial- get the factorial of inputed val
+ * @n: input val
+ * Return: int
+ */
 
 int factorial(int n)
 {
-	int res;
 
 	if (n < 0)
 	{
@@ -13,5 +17,5 @@ int factorial(int n)
 		return (1);
 	}
 
-	return n * factorial(n - 1);
+	return (n * factorial(n - 1));
 }
