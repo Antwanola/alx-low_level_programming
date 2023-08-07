@@ -10,6 +10,7 @@
 
 int main(int argc, char **argv)
 {
+	int first, second, output;
 
 	if (argc != 3)
 	{
@@ -18,9 +19,9 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		int first = atoi(argv[1]);
-		int second = atoi(argv[2]);
-		int output = first * second;
+		first = atoi(argv[1]);
+		second = atoi(argv[2]);
+		output = first * second;
 
 		printf("%d\n", output);
 		return (0);
