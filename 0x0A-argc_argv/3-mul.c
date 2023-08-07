@@ -11,7 +11,12 @@
 int main(int argc, char **argv)
 {
 
-	if (argv[1] && argv[2])
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	else
 	{
 		int first = atoi(argv[1]);
 		int second = atoi(argv[2]);
@@ -20,9 +25,5 @@ int main(int argc, char **argv)
 		printf("%d\n", output);
 		return (0);
 	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
+
 }
