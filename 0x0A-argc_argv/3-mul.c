@@ -10,7 +10,6 @@
 
 int main(int argc, char **argv)
 {
-	int i;
 
 	if (argv[1] && argv[2])
 	{
