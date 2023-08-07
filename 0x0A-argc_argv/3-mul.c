@@ -15,8 +15,10 @@ int main(int argc, char **argv)
 	{
 		int first = atoi(argv[1]);
 		int second = atoi(argv[2]);
+		int output = first * second;
 
-		printf("%d\n", first * second);
+		printf("%d\n", output);
+		return (0);
 	}
 	else
 	{
