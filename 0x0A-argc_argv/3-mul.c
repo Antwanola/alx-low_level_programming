@@ -17,7 +17,6 @@ int main(int argc, char **argv)
 		int second = atoi(argv[2]);
 
 		printf("%d\n", first * second);
-		return (0);
 	}
 	else
 	{
