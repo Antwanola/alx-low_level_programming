@@ -13,6 +13,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
+	int i, d = 0;
 	size_t len = strlen(s1);
 	size_t len2 = strlen(s2);
 	char *strP = NULL;
@@ -22,12 +23,14 @@ char *str_concat(char *s1, char *s2)
 
 	strP = (char *)malloc(len + len2 + 1);
 
-	if (strP == NULL)
-		return (NULL);
-
-	strcpy(strP, s1);
-	strcpy(strP, s2);
-
+	for (i = 0; s1[i] != '\0'; i++)
+		strP[i] = s1[i];
+	for (; s2[d] != '\0'; i++)
+	{
+		strP[i] = s2[d];
+		d++;
+		
+	}
 	return (strP);
 
 
