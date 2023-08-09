@@ -3,7 +3,12 @@
 #include <string.h>
 #include <stdlib.h>
 
-
+/**
+ * str_concat - concat string to a malloc pointer
+ * @s1: firs tring
+ * @s2: econd string
+ * Return: char or Null
+ */
 
 
 char *str_concat(char *s1, char *s2)
@@ -15,7 +20,7 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
 
-	strP = (char *)malloc(sizeof(char) * len + len2 + 1);
+	strP = (char *)malloc(len + len2 + 1);
 
 	if (strP == NULL)
 		return (NULL);
