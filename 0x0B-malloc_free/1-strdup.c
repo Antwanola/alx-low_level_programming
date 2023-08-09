@@ -24,12 +24,14 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	else
-	final = (strcpy(strP, str));
-	if (final == NULL)
 	{
-		return (NULL);
-	}
-	else
-		return (final);
+		final = strcpy(strP, str);
 
+		if (final == NULL)
+		{
+			return (NULL);
+		}
+		else
+			return(final);
+	}
 }
