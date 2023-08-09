@@ -11,19 +11,22 @@
 char *_strdup(char *str)
 {
 	char *strP;
+	char *t;
 	size_t len = strlen(str);
 
 	if (str == NULL)
 		return (NULL);
+	t = (char *)malloc(sizeof(char) * len + 1);
 
-	strP = (char *)malloc(sizeof(char) * len + 1);
-
-	if (strP == NULL)
+	if (t == NULL)
 	{
 		return (NULL);
 	}
 	else
-		strcpy(strP, str);
+	{
+		strP = strcpy(t, str);
+		return (strP);
+	}
 
-	return (strP);
+	free(t);
 }
