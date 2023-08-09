@@ -12,6 +12,7 @@ char *_strdup(char *str)
 {
 	char *strP = NULL;
 	unsigned int len = strlen(str);
+	char *final = NULL;
 
 	if (str == NULL)
 		return (NULL);
@@ -23,6 +24,12 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	else
-		return (strcpy(strP, str));
+	final = (strcpy(strP, str));
+	if (final == NULL)
+	{
+		return (NULL);
+	}
+	else
+		return (final);
 
 }
