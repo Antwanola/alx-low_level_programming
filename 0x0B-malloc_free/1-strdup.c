@@ -10,23 +10,20 @@
 
 char *_strdup(char *str)
 {
-	char *strP;
-	char *t;
+	char *strP = NULL;
+	char *t = NULL;
 	size_t len = strlen(str);
+	int i;
 
 	if (str == NULL)
 		return (NULL);
 	t = (char *)malloc(sizeof(char) * len + 1);
 
 	if (t == NULL)
-	{
 		return (NULL);
-	}
-	else
-	{
-		strP = strcpy(t, str);
-		return (strP);
-	}
+	for (i = 0; i <= len + 1; i++)
+		t[i] = str[i];
 
-	free(t);
+	return (t);
+
 }
