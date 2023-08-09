@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
+
 /**
  * _strdup- duplicates copy of a string
  * @str: A pointer to the string to be duplicated
@@ -22,5 +23,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	else
-	return (strcpy(strP, str));
+		strcpy(strP, str);
+
+	return (strP);
 }
