@@ -21,9 +21,9 @@ char *_strdup(char *str)
 
 	if (t == NULL)
 		return (NULL);
-	for (i = 0; i <= len + 1; i++)
-		t[i] = str[i];
+	strP = strcpy(t, str);
 
-	return (t);
+	return(strP);
+
 
 }
