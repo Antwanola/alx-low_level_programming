@@ -29,7 +29,7 @@ char *_memset(char *s, char b, unsigned int n)
  * @nmemb: Each member of the array
  * @size: The size of each pace needed to be allocate for each member
  *
- * Return: Address to the pointer 
+ * Return: Address to the pointer
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
