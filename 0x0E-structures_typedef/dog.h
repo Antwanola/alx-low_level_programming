@@ -1,13 +1,19 @@
+/**
+ * struct dog -dog struct
+ * @name: name value pointer
+ * @age: age value float
+ * @owner: owner value pointer
+ *
+ * Decription: Dog struct
+ */
+
 #ifndef DOG_H
 #define DOG_H
 struct dog
 {
 	char *name;
-	/*@name: the name value*/
 	float age;
-	/*@age: the age value in float type*/
 	char *owner;
-	/*@owner: the owner value*/
 };
 
 #endif
