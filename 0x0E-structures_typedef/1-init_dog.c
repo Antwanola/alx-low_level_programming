@@ -3,7 +3,7 @@
 /**
  * init_dog-initialize dog struct
  * @d: the struct
- * @ name: the name val
+ * @name: the name val
  * @age: the age val
  * @owner: the owner val
  */
