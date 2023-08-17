@@ -23,6 +23,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (i < n && separator != NULL)
 			printf("%s", separator);
 	}
-	va_end(num_list);
 	printf("\n");
+	va_end(num_list);
 }
