@@ -11,6 +11,8 @@
 size_t print_list(const list_t *h)
 {
 	unsigned int index = 0;
+	unsigned int count = 0;
+
 	while (h != NULL)
 	{
 		if (!h->str)
@@ -19,7 +21,12 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[%lu] %s\n", strlen(h->str), h->str);
+			while (h->str[count] != '\0')
+			{
+				count++;
+				
+			}
+			printf("[%lu] %s\n", count, h->str);
 		}
 		h = h->next;
 		index++;
