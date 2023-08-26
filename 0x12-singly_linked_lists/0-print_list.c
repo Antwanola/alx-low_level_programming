@@ -21,12 +21,7 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			while (h->str[count] != '\0')
-			{
-				count++;
-				
-			}
-			printf("[%lu] %s\n", count, h->str);
+			printf("[%u] %s\n", h->len, h->str);
 		}
 		h = h->next;
 		index++;
