@@ -1,59 +1,44 @@
-
-
-
-int check_num(char *str)
-{
-	/*Declaring variables*/
-	unsigned int count;
-
-	count = 0;
-	while (count < strlen(str)) /*count string*/
-
-	{
-		if (!isdigit(str[count])) /*check if str there are digit*/
-		{
-			return (0);
-		}
-
-		count++;
-	}
-	return (1);
-}
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
 /**
- * main -adds positive numbers
- * @argc: argument count
- * @argv: value of argc
- *
- * Return: 0 or value
- */
+  * main- main entry
+  * @argc: arg count
+  * @argv: arg vector
+  * Return: int
+  */
 
 int main(int argc, char *argv[])
-
 {
-	/*Declaring variables*/
-	int count;
-	int str_to_int;
-	int sum = 0;
+	int i, j, sum = 0;
+	char c;
 
-	count = 1;
-	while (count < argc) /*Goes through the whole array*/
+	if (argc == 1)
 	{
-		if (check_num(argv[count]))
-
-		{
-			str_to_int = atoi(argv[count]);
-			sum += str_to_int
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
-
-		count++;
+		printf("0\n");
 	}
+	else
+	{
+		for (i = 1; i < argc; i++)
+		{
+			for (j = 0; argv[i][j] != '\0'; j++)
+			{
+				c = argv[i][j];
+				if (isdigit(c))
+				{
 
-	printf("%d\n", sum); /*print sum*/
-
+				}
+				else
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+			sum = sum + atoi(argv[i]);
+		}
+		printf("%d\n", sum);
+	}
 	return (0);
-
+}
