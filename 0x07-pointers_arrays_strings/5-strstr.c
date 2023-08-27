@@ -1,22 +1,29 @@
 #include "main.h"
 
+
+/**
+  * _strstr- the func to print substring
+  * @haystack: word to split
+  * @needle: word to compare
+  * Return: strin
+  */
+
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack != '\0')
+	for (; *haystack != '\0'; haystack++)
 	{
-		char *a = needle;
+		char *a = haystack;
+		char *b = needle;
 
-		while (*a != '\0')
+		while (*a == *b && *b != '\0')
 		{
-			if (*haystack == *a  && *a != '\0')
-			{
-				return (haystack);
-			}
 			a++;
+			b++;
 		}
-
-		haystack++;
+		if (*b == '\0')
+		{
+			return (haystack);
+		}
 	}
-
 	return (0);
 }
