@@ -4,7 +4,7 @@
 /**
  * get_op_func - selects the correct function to perform
  * @s: Operator passed as arg
- * Return: pointer that correspond to the operator
+ * Return: pointer that to the operator
  */
 
 
@@ -20,7 +20,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (i < 10)
+	while (ops[i].op != NULL)
 	{
 		if (s[0] == ops->op[i])
 			break;

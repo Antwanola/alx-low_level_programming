@@ -7,7 +7,9 @@
  * Return: addition
  */
 int op_add(int a, int b)
+{
 	return (a + b);
+}
 
 /**
  * op_sub - Substraction numbers
@@ -16,7 +18,9 @@ int op_add(int a, int b)
  * Return: Subtraction
  */
 int op_sub(int a, int b)
+{
 	return (a - b);
+}
 
 /**
  * op_mul - Multiplication of numbers
@@ -26,7 +30,9 @@ int op_sub(int a, int b)
  */
 
 int op_mul(int a, int b)
+{
 	return (a * b);
+}
 
 
 /**
@@ -36,7 +42,9 @@ int op_mul(int a, int b)
  * Return: division
  */
 int op_div(int a, int b)
+{
 	return (a / b);
+}
 /**
  * op_mod - the remainder of the division of two number
  * @a: first number
@@ -44,4 +52,6 @@ int op_div(int a, int b)
  * Return: modulo
  */
 int op_mod(int a, int b)
+{
 	return (a % b);
+}

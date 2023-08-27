@@ -2,7 +2,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-
+/**
+ * main- the main function
+ * @argc: the arg count
+ * @argv: the argument vectors
+ * Return: int
+ */
 
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {

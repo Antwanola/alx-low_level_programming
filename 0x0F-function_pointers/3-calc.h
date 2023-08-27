@@ -5,6 +5,12 @@
 #include <stdlib.h>
 
 
+/**
+ * struct op - struct op
+ * @op: the operator pointer
+ * @f: the function pointer
+ */
+
 typedef struct op
 {
 	char *op;
