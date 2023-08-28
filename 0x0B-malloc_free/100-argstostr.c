@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * argstostr - argument to become string
+ * argstostr - argument to string
  * @ac: argument count
  * @av: argument vector
  * Return: NULL or pointer
@@ -10,7 +10,7 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i, f, d = 0, l = 0;
+	int i, f, g = 0, l = 0, k = 0;
 	char *str;
 
 	if (ac == 0 || av == NULL)
@@ -28,14 +28,14 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-	for (f = 0; av[i][f]; n++)
+	for (f = 0; av[i][f]; f++)
 	{
-		str[d] = av[i][f];
-		d++;
+		str[g] = av[i][f];
+		g++;
 	}
-	if (str[d] == '\0')
+	if (str[g] == '\0')
 	{
-		str[d++] = '\n';
+		str[g++] = '\n';
 	}
 	}
 	return (str);
