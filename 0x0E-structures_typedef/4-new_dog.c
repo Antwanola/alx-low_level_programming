@@ -4,7 +4,7 @@
 #include "dog.h"
 
 /**
-*_strcopy - string copier
+*_strcpy - string copier
 *@dest: pointer for dest str
 *@src: pointer storing string to copy
 *Return: copied
@@ -42,7 +42,7 @@ int _strlen(char *s)
 }
 
 /**
- * new_dog-The new dog typedef func
+ * new_dog- The new dog typedef func
  * @name: name
  * @age: age
  * @owner: onwer
