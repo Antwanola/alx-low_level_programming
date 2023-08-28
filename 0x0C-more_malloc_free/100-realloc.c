@@ -8,6 +8,7 @@
   * @ptr: pointer
   * @old_size: size
   * @new_size: new size
+  * Return: void
   */
 
 
