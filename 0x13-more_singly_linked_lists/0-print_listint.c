@@ -3,7 +3,7 @@
 
 
 /**
-  * Print_listint- Print int
+  * print_listint- Print int
   * @h: the list header
   * Return: size_t
   */
