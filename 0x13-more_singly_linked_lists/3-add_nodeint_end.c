@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+  * add_nodeint_end- this adds to the end of list
+  * @head: the head
+  * @n: the int
+  * Return: listint_t
+  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
