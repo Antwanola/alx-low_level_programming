@@ -5,8 +5,8 @@
 #define ERR_MSG "Error"
 
 /**
- * is_digit - check for digit in string
- * @s: the string
+ * is_digit- check for digit in string
+ * @str: the string
  * Return: 1 if found, else return 0
  */
 
@@ -24,8 +24,8 @@ int is_digit(char *str)
 }
 
 /**
- * _strlen - string length
- * @s: string
+ * _strlen- string length
+ * @str: string
  * Return: the length of the string
  */
 
@@ -41,7 +41,7 @@ int _strlen(char *str)
 }
 
 /**
- * errors - main error handler
+ * errors- main error handler
  */
 
 void errors(void)
@@ -51,7 +51,7 @@ void errors(void)
 }
 
 /**
- * main - multiplies two numbers
+ * main- multiplies two numbers
  * @argc: argc
  * @argv: argv
  * Return: 0
