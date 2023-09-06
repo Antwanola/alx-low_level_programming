@@ -3,6 +3,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <fcntl.h>
+#include <sys/types.h>
+
 
 /**
   * read_textfile- reads texfile and return bytes read
@@ -11,7 +13,7 @@
   * Return: size_t;
   */
 
-size_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fp = 0;
 	char *buffer = NULL;
