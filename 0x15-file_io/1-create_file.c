@@ -19,7 +19,7 @@ int create_file(const char *filename, char *text_content)
 	int i = 0;
 	ssize_t create_file;
 
-	if (!filename || !text_content)
+	if (!filename)
 		return (-1);
 	while (text_content[i] != '\0')
 		i++;
