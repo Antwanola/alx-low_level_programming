@@ -4,6 +4,12 @@
 #include <unistd.h>
 #include <fcntl.h>
 
+/**
+  * append_text_to_file- appends text to EOF
+  * @filename: the file name
+  * @text_content: text to add at EOF
+  * Return: int
+  */
 
 int append_text_to_file(const char *filename, char *text_content)
 {
