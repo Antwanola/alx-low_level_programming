@@ -24,12 +24,12 @@ int create_file(const char *filename, char *text_content)
 	while (text_content[i] != '\0')
 		i++;
 	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
-	if (fd <= 0)
+	if (fd == -1)
 	{
 		return (-1);
 	}
 	create_file = write(fd, text_content, i);
-	if (create_file <= 0)
+	if (create_file == -1)
 	{
 		close(fd);
 		return (-1);
