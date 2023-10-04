@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include "main.h"
 /**
   * read_textfile- read textfile input
   * @filename: the file to be read
