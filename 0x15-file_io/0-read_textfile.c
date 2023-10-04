@@ -12,7 +12,7 @@
   */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE fd;
+	int fd;
 	ssize_t read_file, write_file;
 	char *buffer = NULL;
 
@@ -22,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 
-	buffer = (char *)malloc(sizeof(char) * letters);
+	buffer = (char *)malloc(sizeof(char) * letters + 1);
 	if (!buffer)
 	{
 		close(fd);
