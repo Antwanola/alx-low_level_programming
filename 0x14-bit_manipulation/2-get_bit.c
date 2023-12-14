@@ -1,20 +1,23 @@
 #include "main.h"
 
-
-
-
-unsigned long int  print_binary(unsigned long int n)
-{
-	unsigned long int re = 0;
-	if (n > 1)
-		print_binary(n >> 1);
-	re = ((n & 1) + '0');
-	return (re);
-}
+/**
+ * get_bit- gets the bit at given index
+ * @n: the bit
+ * @index: the index
+ * Return: integer
+ */
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int result = 0;
-	result = print_binary(n);
+	unsigned int result = 0;
+
+	if (index >= sizeof(unsigned long int) * 8)
+		return (-1);
+	while (result < index)
+	{
+		n = n >> 1;
+		result++;
+	}
+	return ((n & 1));
 
 }
