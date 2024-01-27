@@ -1,4 +1,10 @@
 #include "lists.h"
+/**
+ * add_dnodeint_end- add node to the end of list
+ * @head: the list head
+ * @n: the value to be added
+ * Return the added value in the list
+ */
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
